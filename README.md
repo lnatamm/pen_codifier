@@ -102,7 +102,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull r
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível sob a licença MIT.
+Este projeto é de código aberto e está disponível sob a Licença Pública Geral GNU (GPL).
 
 ---
 
