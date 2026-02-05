@@ -200,12 +200,10 @@ const PenCodifier = () => {
                   <div className="pen-container">
                     <div className="pen-label">Caneta de Referência (1cm)</div>
                     <div className="pen">
+                      <div className="pen-top"></div>
+                      <div className="pen-clip"></div>
+                      <div className="pen-tip"></div>
                       <div className="pen-height-badge">1cm</div>
-                      {/* Esta é uma caneta estilizada em CSS */}
-                      {/* Para usar uma imagem PNG: */}
-                      {/* 1. Coloque pen.png em frontend/public/ */}
-                      {/* 2. Descomente o estilo .pen no CSS que usa background-image */}
-                      {/* 3. Comente ou remova os estilos atuais da .pen */}
                     </div>
                   </div>
                   <div className="height-visualization">
@@ -250,6 +248,9 @@ const PenCodifier = () => {
                   <div className="pen-container">
                     <div className="pen-label">Caneta de Referência (1cm)</div>
                     <div className="pen">
+                      <div className="pen-top"></div>
+                      <div className="pen-clip"></div>
+                      <div className="pen-tip"></div>
                       <div className="pen-height-badge">1cm</div>
                     </div>
                   </div>
@@ -318,14 +319,6 @@ const PenCodifier = () => {
             <div className="result-section">
               <h3>📖 Resultado:</h3>
               <div className="result-card">
-                <div className="result-item">
-                  <span className="result-label">Altura medida:</span>
-                  <span className="result-value">{decodifyResult.measured_height_cm} cm</span>
-                </div>
-                <div className="result-item">
-                  <span className="result-label">Fração:</span>
-                  <span className="result-value fraction">{decodifyResult.fraction}</span>
-                </div>
                 <div className="result-item highlight">
                   <span className="result-label">Texto decodificado:</span>
                   <span className="result-value text-decoded">
