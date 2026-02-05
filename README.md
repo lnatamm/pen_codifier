@@ -1,3 +1,10 @@
+# Disclaimer
+
+Frontend desenvolvido com a ajuda do github copilot.
+
+# Créditos
+🎵 [@igormathbr](https://www.tiktok.com/@igormathbr?_r=1&_t=ZS-93en39XAnUj) no TikTok
+
 # 🖊️ Pen Codifier
 
 Uma aplicação web interativa para codificar frases em frações decimais usando uma caneta de altura fixa de 1cm como referência.
@@ -7,8 +14,6 @@ Uma aplicação web interativa para codificar frases em frações decimais usand
 - ✨ **Codificar Texto**: Converta frases em frações decimais
 - 🔓 **Decodificar Frações**: Converta frações de volta para texto
 - 📊 **Visualização de Altura**: Veja a altura correspondente em centímetros
-- 📱 **Design Responsivo**: Funciona perfeitamente em desktop e mobile
-- 🎨 **Interface Moderna**: UI bonita e intuitiva
 - ⚡ **Modo Standalone**: Funciona sem necessidade de backend (versão JavaScript pura)
 
 ## 🎯 Como Funciona
@@ -26,7 +31,7 @@ A fração decimal representa a "altura" proporcional a uma caneta de 1cm.
 
 ## 🚀 Demo Online
 
-Acesse a aplicação em: `https://seu-usuario.github.io/pen_codifier/`
+Acesse a aplicação em: `https://lnatamm.github.io/pen_codifier/`
 
 ## 💻 Desenvolvimento Local
 
@@ -61,10 +66,6 @@ Acesse a documentação da API: http://localhost:8000/docs
 - FastAPI (Python)
 - Pydantic para validação
 - CORS habilitado
-
-## 🌐 Deploy no GitHub Pages
-
-Consulte o arquivo [DEPLOY_GUIDE.md](DEPLOY_GUIDE.md) para instruções detalhadas de como fazer deploy no GitHub Pages.
 
 ## 📖 Estrutura do Projeto
 
