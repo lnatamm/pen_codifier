@@ -3,6 +3,7 @@ from fastapi import FastAPI, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 from routes.template_routes import api_fruits
+from routes.pen_routes import api_pen
 
 app = FastAPI()
 api = APIRouter(prefix="/api", tags=["API"])
@@ -11,6 +12,7 @@ api = APIRouter(prefix="/api", tags=["API"])
 # For example, if your frontend is running on localhost:5173, you can set it
 origins: List[str] = [
     "http://localhost:5173",
+    "https://*.github.io",
 ]
 
 app.add_middleware(
@@ -22,6 +24,7 @@ app.add_middleware(
 )
 
 api.include_router(api_fruits)
+api.include_router(api_pen)
 
 app.include_router(api)
 

@@ -1,4 +1,111 @@
-# Guia de Uso do Projeto
+# 🖊️ Pen Codifier
+
+Uma aplicação web interativa para codificar frases em frações decimais usando uma caneta de altura fixa de 1cm como referência.
+
+## 🌟 Funcionalidades
+
+- ✨ **Codificar Texto**: Converta frases em frações decimais
+- 🔓 **Decodificar Frações**: Converta frações de volta para texto
+- 📊 **Visualização de Altura**: Veja a altura correspondente em centímetros
+- 📱 **Design Responsivo**: Funciona perfeitamente em desktop e mobile
+- 🎨 **Interface Moderna**: UI bonita e intuitiva
+- ⚡ **Modo Standalone**: Funciona sem necessidade de backend (versão JavaScript pura)
+
+## 🎯 Como Funciona
+
+Cada letra do alfabeto é codificada em um número de dois dígitos:
+- a=01, b=02, c=03, ..., z=26
+- espaço=00
+
+A fração decimal representa a "altura" proporcional a uma caneta de 1cm.
+
+**Exemplo:**
+- Entrada: "mago"
+- Fração: 0.13010715
+- Altura: 0.13010715 cm
+
+## 🚀 Demo Online
+
+Acesse a aplicação em: `https://seu-usuario.github.io/pen_codifier/`
+
+## 💻 Desenvolvimento Local
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Acesse: http://localhost:5173
+
+### Backend (Opcional)
+
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+Acesse a documentação da API: http://localhost:8000/docs
+
+## 📦 Tecnologias
+
+### Frontend
+- React + Vite
+- CSS3 com animações
+- JavaScript ES6+
+
+### Backend
+- FastAPI (Python)
+- Pydantic para validação
+- CORS habilitado
+
+## 🌐 Deploy no GitHub Pages
+
+Consulte o arquivo [DEPLOY_GUIDE.md](DEPLOY_GUIDE.md) para instruções detalhadas de como fazer deploy no GitHub Pages.
+
+## 📖 Estrutura do Projeto
+
+```
+pen_codifier/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── PenCodifier.jsx
+│   │   │   └── PenCodifier.css
+│   │   ├── utils/
+│   │   │   └── pen.js (lógica standalone)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
+│   └── package.json
+├── backend/
+│   ├── routes/
+│   │   └── pen_routes.py
+│   ├── models/
+│   │   └── pen_models.py
+│   ├── utils/
+│   │   └── pen.py
+│   └── main.py
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── README.md
+```
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+
+## 📄 Licença
+
+Este projeto é de código aberto e está disponível sob a licença MIT.
+
+---
+
+## 🔧 Guia de Uso Original do Template
 
 Este repositório é um template para integração entre **React** e **Python (FastAPI)**. Siga as instruções abaixo para criar novas rotas e modelos, além de testar sua API localmente.
 
