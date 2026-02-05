@@ -208,25 +208,16 @@ const PenCodifier = () => {
                   </div>
                   <div className="height-visualization">
                     <div className="height-label">Altura Correspondente</div>
-                    <div className="height-bar-container">
-                      {/* Linha que marca a fração da altura */}
+                    <div className="slider-wrapper static">
+                      <div className="vertical-slider-static"></div>
                       <div 
-                        className="height-marker"
+                        className="slider-marker"
                         style={{ 
                           bottom: `${Math.min((codifyResult.height_cm / penHeight) * 100, 100)}%`
                         }}
                       >
+                        <span className="marker-label">{codifyResult.height_cm}cm</span>
                       </div>
-                      <span 
-                        className="height-value"
-                        style={{
-                          bottom: `${Math.min((codifyResult.height_cm / penHeight) * 100, 100)}%`,
-                          top: 'auto',
-                          marginBottom: '10px'
-                        }}
-                      >
-                        {codifyResult.height_cm}cm
-                      </span>
                     </div>
                   </div>
                 </div>
