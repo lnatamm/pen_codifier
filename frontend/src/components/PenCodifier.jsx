@@ -268,7 +268,7 @@ const PenCodifier = () => {
               </div>
               
               <div className="fraction-input-section">
-                <label htmlFor="fraction-manual-input">Digite a fração (precisão infinita):</label>
+                <label htmlFor="fraction-manual-input">Digite a fração:</label>
                 <input
                   id="fraction-manual-input"
                   type="text"
